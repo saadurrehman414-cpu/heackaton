@@ -1,0 +1,318 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: black;
+    color: white;
+
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #ff3c00;
+}
+
+nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+.main{
+    background: url("https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg") no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+.top {
+    position: relative;
+    z-index: 1;
+}
+
+.top h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.top p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e03500;
+}
+
+
+.cars {
+    padding: 60px 10%;
+    background: white text-align: center;
+}
+
+.cars h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.car main {
+    display: grid;
+    gap: 30px;
+}
+
+.pic {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pic:hover {
+    transform: translateY(-10px);
+}
+
+.pic img {
+    width: 100%;
+    border-radius: 10px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.pic h3 {
+    margin: 15px 0 5px;
+    color: black;
+}
+
+.pic p {
+    color: black;
+}
+
+.pic button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pic button:hover {
+    background: red;
+}
+
+
+.features {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.features h2 {
+  font-size: 24px;
+  color: #222;
+}
+
+.features p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.box a {
+  color: rgb(0, 123, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+.about {
+    padding: 60px 10px;
+    text-align: center;
+    background: white;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+.contact {
+    padding: 60px 10%;
+    background: white;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+.contact button {
+    padding: 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: red;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main .top h1 {
+    font-size: 2rem;
+  }
+
+  .car.main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .main .top h1 {
+    font-size: 1.6rem;
+  }
+
+  .main .top p {
+    font-size: 0.9rem;
+  }
+
+  .pic {
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+}
